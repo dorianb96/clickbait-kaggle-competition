@@ -11,12 +11,12 @@ We transformed the target variable (shares) into log space to improve the perfor
 We dealt with missing values by replacing them with 0. There weren’t any categorical features so we didn’t have to deal with one hot encoding and likely reducing the dimensionality of data.   
 
 
-## 2) TRAINING
+## 2) Training
 
 We performed 5-fold Cross validation on different models we tested (overall 25+ models). 
 Cross-validation was very time consuming on our final model which averaged out predictions of 38 smaller linear models.  
 
-## 3) FINAL MODEL
+## 3) Final Model
 
 We tried various linear models (gradient boosted regressors/xgboost, lasso, ridge, linear model, elastic net…) but none of those by itself produced good results as they usually were ranked in the bottom 15-20% on the leaderboard.   
 
